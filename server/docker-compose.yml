@@ -1,0 +1,119 @@
+version: "3"
+
+networks:
+  bibas:
+    driver: bridge
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    hostname: rabbitmq
+    volumes:
+      - /var/lib/rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    env_file:
+      - ./rabbitmq.env
+    networks:
+      - bibas
+
+  postgres:
+    container_name: postgres
+    image: postgres:latest
+    volumes:
+      - ./data:/data/postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: bibas
+      PGDATA: /data/postgres
+    ports:
+      - "5432:5432"
+    restart: always
+    networks:
+      - bibas
+
+  gateway:
+    container_name: gateway
+    build:
+      context: ./gateway
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - rabbitmq
+    env_file:
+      - ./gateway/.env
+    networks:
+      - bibas
+
+  users:
+    container_name: users
+    build:
+      context: ./users
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      - rabbitmq
+    env_file:
+      - ./users/.env
+    networks:
+      - bibas
+
+  payments:
+    container_name: payments
+    build:
+      context: ./payments
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      - rabbitmq
+    env_file:
+      - ./payments/.env
+    networks:
+      - bibas
+
+  auth:
+    container_name: auth
+    build:
+      context: ./auth
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      - rabbitmq
+    env_file:
+      - ./auth/.env
+    networks:
+      - bibas
+
+  messages:
+    container_name: messages
+    build:
+      context: ./messages
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      - rabbitmq
+    env_file:
+      - ./messages/.env
+    networks:
+      - bibas
+
+  rooms:
+    container_name: rooms
+    build:
+      context: ./rooms
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      - rabbitmq
+    env_file:
+      - ./rooms/.env
+    networks:
+      - bibas
+
+volumes:
+  postgres:
