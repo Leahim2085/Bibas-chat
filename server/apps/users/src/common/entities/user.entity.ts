@@ -1,5 +1,4 @@
 import {Entity, Column, PrimaryColumn} from 'typeorm';
-import {DeviceInterface} from "@interfaces";
 
 @Entity()
 export class User {
@@ -18,9 +17,6 @@ export class User {
     @Column({default: false})
     isActivatedEmail: boolean;
 
-    @PrimaryColumn({ unique: true })
-    avatarUrl: string;
-
-    @Column("jsonb", { array: true })
-    devices: DeviceInterface[];
+    @Column({ nullable: true })
+    avatarUrl?: string;
 }
