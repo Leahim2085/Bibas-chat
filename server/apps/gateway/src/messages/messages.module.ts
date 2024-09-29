@@ -1,8 +1,6 @@
 import {Module} from '@nestjs/common';
 import {MessagesController} from './messages.controller';
 import {MessagesService} from './messages.service';
-import {MessagesService} from './messages.service';
-import {MessagesController} from './messages.controller';
 import {ConfigService} from "@nestjs/config";
 import {ClientProxyFactory, Transport} from "@nestjs/microservices";
 
