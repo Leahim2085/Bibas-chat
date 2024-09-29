@@ -15,6 +15,7 @@ import * as Joi from 'joi';
       validationSchema: Joi.object({
         GATEWAY_PORT: Joi.number().required(),
         RABBITMQ_URL: Joi.string().required(),
+        JWT_SECRET: Joi.string().required(),
       }),
     }),
     AuthModule,
