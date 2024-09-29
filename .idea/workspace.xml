@@ -2,142 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f72827ab-da01-44a1-b05e-d8253ae253f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/bibas-chat.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/cody_history.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/styles/global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/features/Alert/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/features/Alert/ui/alert.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/features/Avatar/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/features/Avatar/ui/avatar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/features/Button/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/features/Button/ui/button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/features/Checkbox/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/features/Checkbox/ui/checkbox.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/shared/libs/cn.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/widgets/AlertDialog/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/widgets/AlertDialog/ui/alert-dialog.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/widgets/Card/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/widgets/Card/ui/card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/widgets/Carousel/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/widgets/Carousel/ui/carousel.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/widgets/ContextMenu/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/widgets/ContextMenu/ui/context-menu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/widgets/Dialog/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/widgets/Dialog/ui/dialog.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/widgets/DropdownMenu/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/widgets/DropdownMenu/ui/dropdown-menu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/auth/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/auth/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/auth/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/auth/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/auth/nest-cli.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/auth/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/auth/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/auth/src/app.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/auth/src/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/auth/src/app.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/auth/src/common/entities/room.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/auth/src/common/interfaces/message.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/auth/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/auth/tsconfig.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/auth/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/gateway/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/gateway/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/gateway/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/gateway/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/gateway/nest-cli.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/gateway/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/gateway/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/gateway/src/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/gateway/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/gateway/tsconfig.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/gateway/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/messages/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/messages/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/messages/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/messages/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/messages/nest-cli.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/messages/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/messages/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/messages/src/app.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/messages/src/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/messages/src/app.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/messages/src/common/entities/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/messages/src/common/entities/room.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/messages/src/common/entities/user.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/messages/src/common/exceptions/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/messages/src/common/interfaces/device.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/messages/src/common/interfaces/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/messages/src/common/interfaces/message.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/messages/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/messages/tsconfig.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/messages/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/payments/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/payments/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/payments/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/payments/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/payments/nest-cli.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/payments/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/payments/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/payments/src/app.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/payments/src/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/payments/src/app.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/payments/src/common/entities/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/payments/src/common/entities/room.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/payments/src/common/entities/user.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/payments/src/common/exceptions/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/payments/src/common/interfaces/device.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/payments/src/common/interfaces/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/payments/src/common/interfaces/message.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/payments/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/payments/tsconfig.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/payments/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/rooms/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/rooms/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/rooms/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/rooms/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/rooms/nest-cli.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/rooms/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/rooms/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/rooms/src/app.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/rooms/src/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/rooms/src/app.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/rooms/src/common/entities/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/rooms/src/common/entities/room.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/rooms/src/common/entities/user.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/rooms/src/common/exceptions/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/rooms/src/common/interfaces/device.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/rooms/src/common/interfaces/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/rooms/src/common/interfaces/message.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/rooms/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/rooms/tsconfig.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/rooms/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/users/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/users/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/users/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/users/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/users/nest-cli.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/users/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/users/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/users/src/app.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/users/src/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/users/src/app.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/users/src/common/entities/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/users/src/common/entities/room.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/users/src/common/entities/user.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/users/src/common/exceptions/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/users/src/common/interfaces/device.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/users/src/common/interfaces/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/users/src/common/interfaces/message.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/users/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/users/tsconfig.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/apps/users/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,23 +36,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.CodyConvertUrlToCodebaseName": "true",
-    "RunOnceActivity.CodyHistoryLlmMigration": "true",
-    "RunOnceActivity.CodyProjectSettingsMigration": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/projects/Bibas-chat/server/apps/users",
-    "list.type.of.created.stylesheet": "CSS",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "ts.external.directory.path": "D:\\projects\\Bibas-chat\\server\\apps\\rooms\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.CodyConvertUrlToCodebaseName&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.CodyHistoryLlmMigration&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.CodyProjectSettingsMigration&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/projects/Bibas-chat/server/apps/users&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\projects\\Bibas-chat\\server\\apps\\rooms\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\projects\Bibas-chat\server\apps\users" />
@@ -211,7 +76,8 @@
       <option name="presentableId" value="Default" />
       <updated>1727504676665</updated>
       <workItem from="1727504693486" duration="8088000" />
-      <workItem from="1727526370852" duration="16723000" />
+      <workItem from="1727526370852" duration="16860000" />
+      <workItem from="1727608799450" duration="280000" />
     </task>
     <servers />
   </component>
