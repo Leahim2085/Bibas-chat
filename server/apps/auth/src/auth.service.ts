@@ -9,9 +9,10 @@ import * as bcrypt from "bcrypt";
 import { CreateUserDto, LoginDto } from "./dtos";
 import { v4 as uuid } from "uuid";
 import { EmailService } from "./email.service";
+import { checkPassword, generateJWT } from "@helpers";
 
 @Injectable()
-export class AppService {
+export class AuthService {
   constructor(
     private readonly emailService: EmailService,
     private jwtService: JwtService,
@@ -29,7 +30,12 @@ export class AppService {
       throw Exceptions.UserExist();
     }
 
-    const userJWTS = this.generateJWT({ email, refresh: true });
+    const userJWTS = generateJWT({
+      email,
+      refresh: true,
+      jwtService: this.jwtService,
+      configService: this.configService,
+    });
 
     const activateCode = uuid();
     const activateLink = `http://localhost:5173/activate-email/${activateCode}`;
@@ -58,52 +64,25 @@ export class AppService {
       throw Exceptions.AccountNotActivated();
     }
 
-    await this.checkPassword(password, user.password);
+    await checkPassword(password, user.password);
 
-    const userJWTS = this.generateJWT({ email, refresh: true });
+    const userJWTS = generateJWT({
+      email,
+      refresh: true,
+      jwtService: this.jwtService,
+      configService: this.configService,
+    });
 
     return userJWTS;
   }
 
   public async refresh(email: string) {
-    const { access } = this.generateJWT({ email, refresh: false });
+    const { access } = generateJWT({
+      email,
+      refresh: false,
+      jwtService: this.jwtService,
+      configService: this.configService,
+    });
     return { access };
-  }
-
-  private generateJWT(options: { email: string; refresh: boolean }) {
-    const access = this.jwtService.sign(
-      { email: options.email },
-      {
-        expiresIn: this.configService.get("ACCESS_EXPIRES_IN"),
-        secret: this.configService.get("JWT_SECRET"),
-      },
-    );
-    if (options.refresh) {
-      const refresh = this.jwtService.sign(
-        { email: options.email },
-        {
-          expiresIn: this.configService.get("REFRESH_EXPIRES_IN"),
-          secret: this.configService.get("JWT_SECRET"),
-        },
-      );
-
-      return {
-        access,
-        refresh,
-      };
-    } else {
-      return {
-        access,
-      };
-    }
-  }
-
-  private async checkPassword(password: string, hash: string) {
-    const compared = await bcrypt.compare(password, hash);
-    if (!compared) {
-      throw Exceptions.WrongPassword();
-    }
-
-    return compared;
   }
 }

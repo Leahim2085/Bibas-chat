@@ -1,6 +1,6 @@
 import { Module } from "@nestjs/common";
-import { AppController } from "./app.controller";
-import { AppService } from "./app.service";
+import { AuthController } from "./auth.controller";
+import { AuthService } from "./auth.service";
 import { ConfigModule, ConfigService } from "@nestjs/config";
 import * as Joi from "joi";
 import { TypeOrmModule } from "@nestjs/typeorm";
@@ -70,7 +70,7 @@ import { HandlebarsAdapter } from "@nestjs-modules/mailer/dist/adapters/handleba
       }),
     }),
   ],
-  controllers: [AppController],
-  providers: [AppService, EmailService],
+  controllers: [AuthController],
+  providers: [AuthService, EmailService],
 })
 export class AppModule {}

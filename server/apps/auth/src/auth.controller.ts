@@ -1,13 +1,13 @@
 import { Controller } from "@nestjs/common";
-import { AppService } from "./app.service";
+import { AuthService } from "./auth.service";
 import { MessagePattern } from "@nestjs/microservices";
 import { CreateUserDto, LoginDto } from "./dtos";
 import { EmailService } from "./email.service";
 
 @Controller()
-export class AppController {
+export class AuthController {
   constructor(
-    private readonly appService: AppService,
+    private readonly appService: AuthService,
     private readonly emailService: EmailService,
   ) {}
 
