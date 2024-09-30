@@ -1,21 +1,21 @@
 import { Injectable } from "@nestjs/common";
-import { JwtService } from "@nestjs/jwt";
 import { InjectRepository } from "@nestjs/typeorm";
 import { User } from "@entities";
 import { Repository } from "typeorm";
 import { ConfigService } from "@nestjs/config";
 import { Exceptions } from "@exceptions";
-import * as bcrypt from "bcrypt";
 import { CreateUserDto, LoginDto } from "./dtos";
 import { v4 as uuid } from "uuid";
-import { EmailService } from "./email.service";
-import { checkPassword, generateJWT } from "@helpers";
+import { EmailService } from "./email/email.service";
+import { JwtService } from "./jwt/jwt.service";
+import { CryptoService } from "./crypto/crypto.service";
 
 @Injectable()
 export class AuthService {
   constructor(
     private readonly emailService: EmailService,
-    private jwtService: JwtService,
+    private readonly jwtService: JwtService,
+    private readonly cryptoService: CryptoService,
     private configService: ConfigService,
     @InjectRepository(User) private usersRepository: Repository<User>,
   ) {}
@@ -30,11 +30,9 @@ export class AuthService {
       throw Exceptions.UserExist();
     }
 
-    const userJWTS = generateJWT({
+    const userJWTS = thos.jwtService.generateJWT({
       email,
       refresh: true,
-      jwtService: this.jwtService,
-      configService: this.configService,
     });
 
     const activateCode = uuid();
@@ -47,7 +45,7 @@ export class AuthService {
     newUser.id = uuid();
     newUser.email = email;
     newUser.username = username;
-    newUser.password = bcrypt.hashSync(password, 3);
+    newUser.password = this.cryptoService.hashPassword(password);
     newUser.emailCode = activateCode;
 
     await this.usersRepository.save(newUser);
@@ -64,24 +62,20 @@ export class AuthService {
       throw Exceptions.AccountNotActivated();
     }
 
-    await checkPassword(password, user.password);
+    await this.cryptoService.checkPassword(password, user.password);
 
-    const userJWTS = generateJWT({
+    const userJWTS = this.jwtService.generateJWT({
       email,
       refresh: true,
-      jwtService: this.jwtService,
-      configService: this.configService,
     });
 
     return userJWTS;
   }
 
   public async refresh(email: string) {
-    const { access } = generateJWT({
+    const { access } = this.jwtService.generateJWT({
       email,
       refresh: false,
-      jwtService: this.jwtService,
-      configService: this.configService,
     });
     return { access };
   }

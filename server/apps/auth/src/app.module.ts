@@ -6,10 +6,12 @@ import * as Joi from "joi";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { Room, User } from "@entities";
 import { JwtModule } from "@nestjs/jwt";
-import { EmailService } from "./email.service";
+import { EmailService } from "./email/email.service";
 import { MailerModule } from "@nestjs-modules/mailer";
 import * as path from "path";
 import { HandlebarsAdapter } from "@nestjs-modules/mailer/dist/adapters/handlebars.adapter";
+import { JwtService } from "./jwt/jwt.service";
+import { CryptoService } from "./crypto/crypto.service";
 
 @Module({
   imports: [
@@ -71,6 +73,6 @@ import { HandlebarsAdapter } from "@nestjs-modules/mailer/dist/adapters/handleba
     }),
   ],
   controllers: [AuthController],
-  providers: [AuthService, EmailService],
+  providers: [AuthService, EmailService, JwtService, CryptoService],
 })
 export class AppModule {}

@@ -2,7 +2,7 @@ import { Controller } from "@nestjs/common";
 import { AuthService } from "./auth.service";
 import { MessagePattern } from "@nestjs/microservices";
 import { CreateUserDto, LoginDto } from "./dtos";
-import { EmailService } from "./email.service";
+import { EmailService } from "./email/email.service";
 
 @Controller()
 export class AuthController {
