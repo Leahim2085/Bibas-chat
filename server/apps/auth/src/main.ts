@@ -1,8 +1,8 @@
-import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';
-import {MicroserviceOptions, Transport} from "@nestjs/microservices";
-import {Logger, ValidationPipe} from "@nestjs/common";
-import {ConfigService} from "@nestjs/config";
+import { NestFactory } from "@nestjs/core";
+import { AppModule } from "./app.module";
+import { MicroserviceOptions, Transport } from "@nestjs/microservices";
+import { Logger, ValidationPipe } from "@nestjs/common";
+import { ConfigService } from "@nestjs/config";
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -13,14 +13,16 @@ async function bootstrap() {
   await app.connectMicroservice<MicroserviceOptions>({
     transport: Transport.RMQ,
     options: {
-      urls: [configService.get('RABBITMQ_URL') as string],
-      queue: 'auth_queue',
+      urls: [configService.get("RABBITMQ_URL") as string],
+      queue: "auth_queue",
       queueOptions: {
         durable: true,
       },
     },
   });
 
-  app.startAllMicroservices().then(() => Logger.log('Auth service is listening'));
+  app
+    .startAllMicroservices()
+    .then(() => Logger.log("Auth service is listening"));
 }
 bootstrap();

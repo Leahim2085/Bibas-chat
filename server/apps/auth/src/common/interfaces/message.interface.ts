@@ -1,9 +1,9 @@
-import {Column, PrimaryColumn} from "typeorm";
+import { Column, PrimaryColumn } from "typeorm";
 
 export class MessageInterface {
-    @Column()
-    text: string;
+  @Column()
+  text: string;
 
-    @PrimaryColumn({ unique: true })
-    from: string;
+  @PrimaryColumn({ unique: true })
+  from: string;
 }

@@ -1,1 +1,1 @@
-export { JWT_PROPS } from "./jwt.enum"
+export { JWT_PROPS } from "./jwt.enum";

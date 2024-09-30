@@ -20,7 +20,7 @@
     "paths": {
       "@entities": ["common/entities/index"],
       "@exceptions": ["common/exceptions/index"],
-      "@interfaces": ["common/interfaces/index"],
+      "@interfaces": ["common/interfaces/index"]
     }
   }
 }

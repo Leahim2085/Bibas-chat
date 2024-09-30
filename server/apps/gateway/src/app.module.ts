@@ -1,11 +1,11 @@
-import { Module } from '@nestjs/common';
-import {ConfigModule} from "@nestjs/config";
-import { AuthModule } from './auth/auth.module';
-import { RoomsModule } from './rooms/rooms.module';
-import { MessagesModule } from './messages/messages.module';
-import { PaymentsModule } from './payments/payments.module';
-import { UsersModule } from './users/users.module';
-import * as Joi from 'joi';
+import { Module } from "@nestjs/common";
+import { ConfigModule } from "@nestjs/config";
+import { AuthModule } from "./auth/auth.module";
+import { RoomsModule } from "./rooms/rooms.module";
+import { MessagesModule } from "./messages/messages.module";
+import { PaymentsModule } from "./payments/payments.module";
+import { UsersModule } from "./users/users.module";
+import * as Joi from "joi";
 
 @Module({
   imports: [
