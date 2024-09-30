@@ -6,7 +6,7 @@ export class User {
     id: string;
 
     @PrimaryColumn({ unique: true})
-    userName: string;
+    username: string;
 
     @PrimaryColumn({ unique: true})
     email: string;
@@ -16,6 +16,9 @@ export class User {
 
     @Column({default: false})
     isActivatedEmail: boolean;
+
+    @Column({ nullable: true })
+    emailCode?: string;
 
     @Column({ nullable: true })
     avatarUrl?: string;

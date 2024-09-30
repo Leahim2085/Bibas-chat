@@ -16,4 +16,12 @@ export class Exceptions {
     public static UserNotFound() {
         return this.Exception('User not found', HttpStatus.NOT_FOUND);
     }
+
+    public static WrongPassword() {
+        return this.Exception('Wrong password provided', HttpStatus.UNAUTHORIZED);
+    }
+
+    public static AccountNotActivated() {
+        return this.Exception('Account not activated', HttpStatus.UNAUTHORIZED);
+    }
 }

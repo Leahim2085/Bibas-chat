@@ -1,6 +1,6 @@
 import {Inject, Injectable} from '@nestjs/common';
 import {ClientProxy} from "@nestjs/microservices";
-import {CreateUserDto, ForgotPasswordDto, LoginDto} from "./dtos";
+import {CreateUserDto, LoginDto} from "./dtos";
 
 @Injectable()
 export class AuthService {
@@ -16,16 +16,8 @@ export class AuthService {
         return this.authClient.send({ cmd: 'login' }, { user });
     }
 
-    async logout(token: string) {
-        return this.authClient.send({ cmd: 'logout' }, { token });
-    }
-
-    async forgotPassword({ email }: ForgotPasswordDto) {
-        return this.authClient.send({ cmd: 'forgot-password' }, { email });
-    }
-
-    async refresh(token: string) {
-        return this.authClient.send({ cmd: 'refresh' }, { token });
+    async refresh(email: string) {
+        return this.authClient.send({ cmd: 'refresh' }, { email });
     }
 
     async activateEmail(code: string) {
