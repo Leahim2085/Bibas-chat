@@ -30,7 +30,7 @@ export class AuthService {
       throw Exceptions.UserExist();
     }
 
-    const userJWTS = thos.jwtService.generateJWT({
+    const userJWTS = await this.jwtService.generateJWT({
       email,
       refresh: true,
     });
@@ -45,7 +45,7 @@ export class AuthService {
     newUser.id = uuid();
     newUser.email = email;
     newUser.username = username;
-    newUser.password = this.cryptoService.hashPassword(password);
+    newUser.password = await this.cryptoService.hashPassword(password);
     newUser.emailCode = activateCode;
 
     await this.usersRepository.save(newUser);
@@ -64,7 +64,7 @@ export class AuthService {
 
     await this.cryptoService.checkPassword(password, user.password);
 
-    const userJWTS = this.jwtService.generateJWT({
+    const userJWTS = await this.jwtService.generateJWT({
       email,
       refresh: true,
     });
@@ -73,7 +73,7 @@ export class AuthService {
   }
 
   public async refresh(email: string) {
-    const { access } = this.jwtService.generateJWT({
+    const { access } = await this.jwtService.generateJWT({
       email,
       refresh: false,
     });

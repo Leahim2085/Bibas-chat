@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { RoomsController } from './rooms.controller';
+import { RoomsService } from './rooms.service';
 import { ConfigModule, ConfigService } from "@nestjs/config";
 import * as Joi from 'joi';
 import {TypeOrmModule} from "@nestjs/typeorm";
@@ -32,7 +32,7 @@ import {Room, User} from '@entities';
       }),
     }),
     TypeOrmModule.forFeature([User, Room])
-  ],  controllers: [AppController],
-  providers: [AppService],
+  ],  controllers: [RoomsController],
+  providers: [RoomsService],
 })
 export class AppModule {}

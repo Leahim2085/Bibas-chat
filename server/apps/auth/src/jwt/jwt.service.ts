@@ -23,7 +23,7 @@ export class JwtService {
       },
     );
     if (refresh) {
-      const refresh = this.jwtService(
+      const refresh = this.jwtService.sign(
         { email: email },
         {
           expiresIn: this.configService.get("REFRESH_EXPIRES_IN"),

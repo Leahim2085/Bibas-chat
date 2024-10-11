@@ -6,4 +6,7 @@ export class MessageInterface {
 
     @PrimaryColumn({ unique: true })
     from: string;
+
+    @Column()
+    time: string;
 }

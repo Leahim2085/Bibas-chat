@@ -7,23 +7,23 @@ import { EmailService } from "./email/email.service";
 @Controller()
 export class AuthController {
   constructor(
-    private readonly appService: AuthService,
+    private readonly authService: AuthService,
     private readonly emailService: EmailService,
   ) {}
 
   @MessagePattern({ cmd: "signup" })
   signup({ user }: { user: CreateUserDto }) {
-    return this.appService.signup(user);
+    return this.authService.signup(user);
   }
 
   @MessagePattern({ cmd: "login" })
   login({ user }: { user: LoginDto }) {
-    return this.appService.login(user);
+    return this.authService.login(user);
   }
 
   @MessagePattern({ cmd: "refresh" })
   refresh({ email }: { email: string }) {
-    return this.appService.refresh(email);
+    return this.authService.refresh(email);
   }
 
   @MessagePattern({ cmd: "activate-email" })

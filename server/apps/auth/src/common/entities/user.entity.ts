@@ -22,4 +22,7 @@ export class User {
 
   @Column({ nullable: true })
   avatarUrl?: string;
+
+  @Column("simple-array", {nullable: true})
+  rooms?: string[];
 }

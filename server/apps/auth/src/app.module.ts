@@ -4,7 +4,7 @@ import { AuthService } from "./auth.service";
 import { ConfigModule, ConfigService } from "@nestjs/config";
 import * as Joi from "joi";
 import { TypeOrmModule } from "@nestjs/typeorm";
-import { Room, User } from "@entities";
+import { User } from "@entities";
 import { JwtModule } from "@nestjs/jwt";
 import { EmailService } from "./email/email.service";
 import { MailerModule } from "@nestjs-modules/mailer";
@@ -43,7 +43,7 @@ import { CryptoService } from "./crypto/crypto.service";
         username: configService.get("POSTGRES_USERNAME"),
         password: configService.get("POSTGRES_PASSWORD"),
         database: configService.get("POSTGRES_DATABASE"),
-        entities: [User, Room],
+        entities: [User],
         synchronize: true,
       }),
     }),

@@ -4,7 +4,7 @@ import {MessageInterface} from "@interfaces";
 @Entity()
 export class Room {
     @PrimaryColumn({ unique: true })
-    inviteCode: string;
+    id: string;
 
     @PrimaryColumn({ unique: true})
     owner: string;
@@ -12,6 +12,9 @@ export class Room {
     @Column()
     name: string;
 
-    @Column("jsonb", { array: true })
-    messages: MessageInterface[];
+    @Column("jsonb", { array: true, nullable: true })
+    messages?: MessageInterface[];
+
+    @Column("simple-array")
+    users: string[];
 }
