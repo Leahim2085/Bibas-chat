@@ -5,31 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f72827ab-da01-44a1-b05e-d8253ae253f8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/prettierrc.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/shared/ui/Button/Button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/shared/ui/Button/Button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/shared/ui/Button/Button.types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/shared/ui/Button/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/styles/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/Alert/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/Alert/ui/alert.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/Avatar/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/Avatar/ui/avatar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/Button/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/Button/ui/button.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/Checkbox/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/Checkbox/ui/checkbox.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/shared/libs/cn.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/widgets/AlertDialog/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/widgets/AlertDialog/ui/alert-dialog.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/widgets/Card/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/widgets/Card/ui/card.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/widgets/Carousel/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/widgets/Carousel/ui/carousel.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/widgets/ContextMenu/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/widgets/ContextMenu/ui/context-menu.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/widgets/Dialog/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/widgets/Dialog/ui/dialog.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/widgets/DropdownMenu/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/widgets/DropdownMenu/ui/dropdown-menu.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,9 +27,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
         <option value="CSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -79,7 +62,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/projects/aplo/src/app/[locale]/about-aplo/mobile/Mobile.tsx",
+    "last_opened_file_path": "D:/projects/Bibas-chat/client",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -96,11 +79,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\Bibas-chat\client" />
+      <recent name="D:\projects\Bibas-chat\client\src\shared" />
       <recent name="D:\projects\Bibas-chat" />
       <recent name="D:\projects\Bibas-chat\server\apps\rooms\src" />
       <recent name="D:\projects\Bibas-chat\server\apps\auth" />
-      <recent name="D:\projects\Bibas-chat\server\apps\gateway\src\common" />
-      <recent name="D:\projects\Bibas-chat\server\apps\auth\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\projects\Bibas-chat\server\apps\auth\src\email" />
@@ -134,7 +117,7 @@
       <workItem from="1728638127999" duration="4063000" />
       <workItem from="1729100765358" duration="608000" />
       <workItem from="1729107472716" duration="1458000" />
-      <workItem from="1729179067115" duration="11297000" />
+      <workItem from="1729179067115" duration="18712000" />
     </task>
     <servers />
   </component>

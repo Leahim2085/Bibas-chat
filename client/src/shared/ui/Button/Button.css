@@ -1,0 +1,46 @@
+.primary-button {
+  @apply bg-accent
+    rounded-primary
+    border-4
+    border-accent
+    border-solid
+    duration-150;
+}
+
+.secondary-button {
+  @apply rounded-primary
+    border-4
+    border-accent
+    border-solid
+    duration-150;
+}
+
+.round-button {
+  @apply rounded-full
+    bg-secondary
+    duration-150;
+}
+
+.primary-button:hover {
+  @apply bg-opacity-0
+    border-4
+    border-accent
+    border-solid;
+}
+
+.secondary-button:hover {
+  @apply bg-accent
+    border-4
+    border-accent
+    border-solid;
+}
+
+.button-text {
+  padding: max(0.5vh, 5px) max(2vw, 15px);
+
+  @apply text-paragraph
+    phone:text-phone-paragraph
+    tablet:text-tablet-paragraph
+    desktop:text-desktop-paragraph
+    font-abeezee;
+}
