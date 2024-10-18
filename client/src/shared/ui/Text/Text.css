@@ -1,0 +1,23 @@
+.paragraph-text {
+	@apply text-paragraph
+    phone:text-phone-paragraph
+    tablet:text-tablet-paragraph
+    desktop:text-desktop-paragraph
+    font-abeezee;
+}
+
+.heading-text {
+	@apply text-paragraph
+    phone:text-phone-heading
+    tablet:text-tablet-heading
+    desktop:text-desktop-heading
+    font-montserrat;
+}
+
+.mega-heading-text {
+	@apply text-paragraph
+    phone:text-phone-mega-heading
+    tablet:text-tablet-mega-heading
+    desktop:text-desktop-mega-heading
+    font-montserrat;
+}

@@ -1,19 +1,15 @@
-import * as React from "react";
-import "./Button.css";
-import { ButtonProps, ButtonVariants } from "./Button.types.ts";
+import { FC, PropsWithChildren } from 'react';
+import { ButtonProps, ButtonVariants } from './Button.types';
+import './Button.css';
 
-function Button({
-  variant = ButtonVariants.primary,
-  onClick,
-  text,
-  icon,
-}: ButtonProps) {
-  return (
-    <button className={`${variant}-button`} onClick={onClick}>
-      {text && <p className={`button-text`}>{text}</p>}
-      {icon && <img src={icon} alt="button-icon" />}
-    </button>
-  );
-}
-
-export default Button;
+export const Button: FC<PropsWithChildren<ButtonProps>> = ({
+	variant = ButtonVariants.primary,
+	onClick,
+	children,
+}: ButtonProps) => {
+	return (
+		<button className={`${variant}-button`} onClick={onClick}>
+			<div className={`${variant}-children`}>{children}</div>
+		</button>
+	);
+};
