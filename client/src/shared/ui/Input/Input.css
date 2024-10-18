@@ -1,0 +1,30 @@
+.input-label {
+	margin-bottom: max(1vh, 10px);
+
+	@apply text-paragraph
+    phone:text-phone-paragraph
+    tablet:text-tablet-paragraph
+    desktop:text-desktop-paragraph
+    font-abeezee;
+}
+
+.input {
+	padding: max(0.5vh, 5px) max(1vw, 10px);
+
+	@apply w-[100%]
+    outline-none
+    bg-thirdly
+    border-thirdly
+    border-4
+    rounded-primary
+    phone:text-phone-paragraph
+    tablet:text-tablet-paragraph
+    desktop:text-desktop-paragraph
+    font-abeezee
+    text-paragraph;
+}
+
+.input:focus {
+	@apply border-accent
+    border-4;
+}
