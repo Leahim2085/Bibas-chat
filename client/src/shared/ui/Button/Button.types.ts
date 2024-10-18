@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
 
 export enum ButtonVariants {
 	primary = 'primary',
@@ -10,5 +10,5 @@ export interface ButtonProps {
 	variant?: ButtonVariants;
 	onClick?: () => void;
 	children: React.ReactNode;
-	type?: 'submit' | 'reset' | 'button';
+	type?: ButtonHTMLAttributes<string>;
 }

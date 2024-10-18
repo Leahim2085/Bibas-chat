@@ -1,0 +1,21 @@
+.background {
+	@apply fixed
+    bg-opacity-50
+    bg-primary
+    top-0
+    right-0
+    left-0
+    bottom-0;
+}
+
+.modal {
+	padding: max(2vh, 20px) max(2vw, 20px);
+
+	@apply w-[30vw]
+    rounded-primary
+    bg-secondary
+    fixed
+    top-10
+    left-1/2
+    -translate-x-1/2;
+}
