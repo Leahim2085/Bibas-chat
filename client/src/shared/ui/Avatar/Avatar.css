@@ -1,0 +1,21 @@
+.user-avatar {
+	@apply phone:w-[45px]
+    phone:h-[45px]
+    tablet:w-[50px]
+    tablet:h-[50px]
+    desktop:w-[60px]
+    desktop:h-[60px]
+    object-cover
+    rounded-full;
+}
+
+.room-avatar {
+	@apply phone:w-[55px]
+    phone:h-[55px]
+    tablet:w-[60px]
+    tablet:h-[60px]
+    desktop:w-[70px]
+    desktop:h-[70px]
+    object-cover
+    rounded-full;
+}

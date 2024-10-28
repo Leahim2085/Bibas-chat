@@ -10,5 +10,5 @@ export interface ButtonProps {
 	variant?: ButtonVariants;
 	onClick?: () => void;
 	children: ReactNode;
-	type?: "submit" | "reset" | "button" ;
+	type?: 'submit' | 'reset' | 'button';
 }

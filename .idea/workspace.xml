@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f72827ab-da01-44a1-b05e-d8253ae253f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/shared/ui/assets/IMG_3107.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/shared/ui/Avatar/Avatar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/shared/ui/Avatar/Avatar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/shared/ui/Avatar/Avatar.types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/shared/ui/Avatar/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/shared/ui/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/shared/ui/Button/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/shared/ui/Button/Button.types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/shared/ui/Button/Button.types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +24,8 @@
       <list>
         <option value="JavaScript File" />
         <option value="TypeScript JSX File" />
-        <option value="TypeScript File" />
         <option value="CSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -116,7 +116,7 @@
       <workItem from="1729179067115" duration="19532000" />
       <workItem from="1729251156908" duration="19056000" />
       <workItem from="1729356790319" duration="2773000" />
-      <workItem from="1730132777842" duration="491000" />
+      <workItem from="1730132777842" duration="2274000" />
     </task>
     <servers />
   </component>
