@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f72827ab-da01-44a1-b05e-d8253ae253f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/shared/ui/Modal/Modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/shared/ui/Modal/Modal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/shared/ui/Modal/Modal.types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/shared/ui/Modal/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/shared/ui/assets/IMG_3107.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/shared/ui/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/shared/ui/Button/Button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/shared/ui/Button/Button.types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/shared/ui/Button/Button.types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/shared/ui/Input/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/shared/ui/Input/Input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/shared/ui/Input/Input.types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/shared/ui/Input/Input.types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,37 +49,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.CodyConvertUrlToCodebaseName": "true",
-    "RunOnceActivity.CodyHistoryLlmMigration": "true",
-    "RunOnceActivity.CodyProjectSettingsMigration": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/webs/PISDA/my-app",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "D:\\projects\\Bibas-chat\\server\\apps\\users\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.CodyConvertUrlToCodebaseName&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.CodyHistoryLlmMigration&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.CodyProjectSettingsMigration&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/projects/Bibas-chat/client/src/shared/ui/assets&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\projects\\Bibas-chat\\server\\apps\\users\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\Bibas-chat\client\src\shared\ui\assets" />
       <recent name="D:\projects\Bibas-chat\client" />
       <recent name="D:\projects\Bibas-chat\client\src\shared" />
       <recent name="D:\projects\Bibas-chat" />
       <recent name="D:\projects\Bibas-chat\server\apps\rooms\src" />
-      <recent name="D:\projects\Bibas-chat\server\apps\auth" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\projects\Bibas-chat\server\apps\auth\src\email" />
@@ -119,7 +114,9 @@
       <workItem from="1729100765358" duration="608000" />
       <workItem from="1729107472716" duration="1458000" />
       <workItem from="1729179067115" duration="19532000" />
-      <workItem from="1729251156908" duration="11669000" />
+      <workItem from="1729251156908" duration="19056000" />
+      <workItem from="1729356790319" duration="2773000" />
+      <workItem from="1730132777842" duration="491000" />
     </task>
     <servers />
   </component>

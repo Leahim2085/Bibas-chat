@@ -9,7 +9,7 @@ export const Button: FC<PropsWithChildren<ButtonProps>> = ({
 	type,
 }: ButtonProps) => {
 	return (
-		<button className={`${variant}-button`} onClick={onClick} type={type ? type : 'button'}>
+		<button className={`${variant}-button`} onClick={onClick} type={type ? type : "button" }>
 			<div className={`${variant}-children`}>{children}</div>
 		</button>
 	);
